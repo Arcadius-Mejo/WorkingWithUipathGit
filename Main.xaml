@@ -76,21 +76,29 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="733,283.65666666666664" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="733,511.65666666666664" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="US_Cities" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="UK_Cities" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build Collection" FirstItem="NY" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="BuildCollection`1_1" Result="[US_Cities]">
+    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build Collection" FirstItem="NY" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="BuildCollection`1_1" Result="[US_Cities]">
       <uasc:BuildCollection.NextItems>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
           <InArgument x:TypeArguments="x:String">Texas</InArgument>
           <InArgument x:TypeArguments="x:String">LV</InArgument>
-          <InArgument x:TypeArguments="x:String">LA</InArgument>
+          <InArgument x:TypeArguments="x:String">San Diego</InArgument>
+        </scg:List>
+      </uasc:BuildCollection.NextItems>
+    </uasc:BuildCollection>
+    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build Collection" FirstItem="Manchester" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="BuildCollection`1_2" Result="[UK_Cities]">
+      <uasc:BuildCollection.NextItems>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">Edinburg</InArgument>
         </scg:List>
       </uasc:BuildCollection.NextItems>
     </uasc:BuildCollection>
